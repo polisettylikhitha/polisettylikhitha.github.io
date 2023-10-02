@@ -1,0 +1,17 @@
+/* @font-face {
+    font-family: myFont;
+    src: url(RetroCool-Regular.ttf);
+} */
+
+/* h1 { font-family: 'Droid Sans', arial, serif; } */
+
+h1, h2, h3, h4 {
+    font-family: 'Tilt Prism', serif;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+p {
+    font-family: 'Pixelify Sans', serif;
+    font-size: 20px;
+    text-shadow: 4px 4px 4px #aaa;
+  }
