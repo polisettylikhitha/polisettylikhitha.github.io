@@ -5,13 +5,52 @@
 
 /* h1 { font-family: 'Droid Sans', arial, serif; } */
 
-h1, h2, h3, h4 {
-    font-family: 'Tilt Prism', serif;
-    font-size: 30px;
-    text-shadow: 4px 4px 4px #aaa;
-  }
-p {
-    font-family: 'Pixelify Sans', serif;
-    font-size: 20px;
-    text-shadow: 4px 4px 4px #aaa;
-  }
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  font-family: 'Homemade Apple';
+}
+
+
+.Exp-title {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.font-description {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.website-section {
+    margin-left: 10px;
+}
+
+.resource-link {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+.website-heading {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.web-div h1, h2, h3, h4 {
+  font-family: 'Tilt Prism', serif;
+  font-size: 30px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+.web-div p {
+  font-family: 'Pixelify Sans', serif;
+  font-size: 20px;
+  text-shadow: 4px 4px 4px #aaa;
+}
