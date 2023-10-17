@@ -1,0 +1,111 @@
+/* Reset some default styles to ensure a consistent look */
+/* body, h1, h2, h3, p, ul, ol { */
+    /* margin: 0; */
+    /* padding: 0; */
+/* } */
+/* Style for the Addendum box */
+ #addendum-content { 
+    font-family: "Times New Roman", Times, serif;
+    background-color: lightblue; /* Choose the background color you prefer */
+    border: 5px outset red; /* Add a border for the box */
+    border-radius: 5px; /* Add rounded corners to the box */
+    margin-top: 20px; /* Add space above the box to separate it from the content */
+ } 
+ /* Make the "Note" section bold and change its color to dark red */
+#note {
+    font-weight: bold;
+    color: darkred;
+}
+
+ #addendum-content111 { 
+    font-family: "Times New Roman", Times, serif;
+    background-color: lightblue; /* Choose the background color you prefer */
+    border: 5px outset red; /* Add a border for the box */
+    border-radius: 5px; /* Add rounded corners to the box */
+    margin-top: 20px; /* Add space above the box to separate it from the content */
+ } 
+/* Style for the Addendum box */
+
+
+/* Create gaps above and below headings */
+h1, h2, h3 {
+    margin: 15px 0; /* Adjust the value to control the size of the gap */
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+/* Set the default font family and size for the entire document */
+body p{
+    font-family: "Arial, Helvetica, sans-serif";;
+    font-size: 16px;
+}
+
+/* Style the headings with appropriate font sizes and colors */
+h1 {
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    color: #100d0d;
+}
+
+h2 {
+    font-size: 20px;
+    color: #1f15e7;
+}
+
+h3 {
+    font-size: 18px;
+    color: #16ae0e;
+}
+
+/* Set the background color for even rows in tables */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style links to be distinct */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add spacing to the entire document and padding for table cells */
+/* body {
+    margin: 20px;
+} */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 602px;
+}
+
+th, td {
+    border: 1px solid rgb(7, 4, 6);
+    text-align: center;
+    padding: 8px;
+}
+
+/* Style for table headers */
+th {
+    background-color: #a6a4a4;
+}
+
+/* Define the button style */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
