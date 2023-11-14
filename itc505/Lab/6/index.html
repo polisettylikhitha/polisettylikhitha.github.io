@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><center>Travel Website</center></h1>
+        <img src="travel-world.jpg" alt="Header Image">
+    </header>
+    <aside class="menu">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="https://www.skyscanner.com/" target="_blank">Skyscanner</a></li>
+                <li><a href="https://www.booking.com/" target="_blank">Booking.com</a></li>
+                <li><a href="https://www.hotels.com/" target="_blank">Hotels.com</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div id="content" class="content-flex">
+            <p><space>May your dreams come true</space></p>
+            <button id="colorButton"><space>Change Color</space></button>
+        </div>
+    </main>
+    <aside class="advertisement">
+        <a href="https://www.amazon.com/" target="_blank">
+            <img src="amazon-advertising-2021.jpg" alt="Advertisement">
+        </a>
+    </aside>
+    <footer>
+        <p>Addendum:</p>
+        <p>Problem Description: This page's JavaScript code initiatives in offering the user an interactive experience. For example, the feature allows the user to customize the main information area's background color by means of the click of a button.</p>
+
+        <p>Methodology: For the purpose of achieving this, I employed the addEventListener function to monitor the button element's "click" event. A random hexadecimal color code is generated and applied to the backgroundColor property of the main content area when the button is clicked. It results in a dynamic and visually attracting experience for the user.</p>
+
+        <p>Difficulties and Solutions:
+            Creating arrangements that the invented color codes were each trustworthy and visually compelling was one of those challenges I walked across. In order to solve this, I combined the Math.random() function in JavaScript alongside a transformation of the obtained values to a hexadecimal representation.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

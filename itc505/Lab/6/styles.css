@@ -1,0 +1,77 @@
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header header"
+        "menu content advertisement"
+        "footer footer footer";
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+header img {
+    max-width: 20%; /* Ensure the image doesn't exceed its container width */
+    height: auto;    /* Maintain the aspect ratio */
+    margin: 10px;    /* Add some margin for spacing */
+}
+
+
+header {
+    grid-area: header;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center; /* Center the header text */
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+main {
+    grid-area: content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.advertisement {
+    grid-area: advertisement;
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+.advertisement img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center; /* Center the footer text */
+}
+
+#content p {
+    text-align: center; /* Center the text inside the content area */
+}
+
+.content-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
