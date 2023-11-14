@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Start Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to the Tic Tac Toe Game!</h1>
+        <div id="story">
+            <!-- Your story content goes here using <p> or <div> tags -->
+            <p>Objective: The goal of Tic Tac Toe is to get three of your symbols (X or O) in a row, either horizontally, vertically, or diagonally, on a 3x3 grid.</p>
+
+                <p>Gameplay:
+                The game starts with an empty grid.
+                Players take turns placing their symbol (X or O) in an empty cell of the grid.
+                The first player is "X," and the second player is "O."</p>
+
+                <p>Winning:
+                A player wins by getting three of their symbols in a row. This can happen horizontally, vertically, or diagonally.</p>
+                
+                <p>Ending the Game:
+                The game ends when one of the following happens:
+                
+                One player gets three of their symbols in a row, and they are declared the winner.
+                The entire grid is filled, and the game is declared a draw (a tie).</p>
+
+                <img src="tic-tac-toe.jpg" alt="Game Image" height="300">
+        </div>
+        <div id="choices" class="choices">
+            <!-- Choices section with buttons -->
+            <div class="center-container">
+                <button class="choice" onclick="makeChoice(1)" id="startButton">Start Game</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="addendum">
+            Addendum: 
+            <p>The Tic Tac Toe game is designed to offer a straightforward and enjoyable gaming experience.</p>
+            <p>Responsive Design: The use of responsive design techniques ensures that the game adapts well to various screen sizes, providing a consistent experience across different devices.</p>
+            <p>Challenges Faced and Overcoming Them:</p>
+            <p>1.Event Handling: Ensuring smooth and accurate event handling for user clicks on the game board required careful consideration. Using event listeners on each cell and managing game state effectively helped overcome this challenge.</p>
+            <p>2.Winning Logic: Implementing the winning logic for different combinations (rows, columns, diagonals) involved intricate checks. Breaking down the logic into smaller functions and using arrays to represent winning patterns streamlined the process.</p>
+            <p>3.Styling Consistency: Maintaining a consistent and visually appealing design across different elements and ensuring responsiveness posed challenges. Regular testing and adjustments were made to achieve a cohesive and polished look.</p>
+            <p>Insights Gained:</p>
+            <p>1.Modular Approach: Breaking down the game logic into modular functions enhances code readability and maintenance. Each function serves a specific purpose, contributing to a more organized codebase.</p>
+            <p>2.User-Centric Design: Prioritizing a user-centric design approach ensures an enjoyable and intuitive gaming experience. Clear instructions, visual feedback, and responsive design contribute to user satisfaction.</p>
+            <p>3.Iterative Development: Iterative development and continuous testing are crucial for identifying and addressing potential issues. Regular testing across different scenarios helps in refining the game and ensuring a robust user experience.</p>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
