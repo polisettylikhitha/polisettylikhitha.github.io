@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Whispers of the Enchanted Forest</title>
+</head>
+<body>
+    <header>
+        <h1>Whispers of the Enchanted Forest</h1>
+    </header>
+
+    <div id="story-container">
+        <h1 id="story-text">Whispers of the Enchanted Forest</h1>
+        <div id="choices-container">
+            <button onclick="makeChoice('enter-forest')">Enter forest</button>
+        </div>
+        <div id="image-container">
+            <img src="imageFiles/image_1.jpg" alt="Forest Image" id="story-image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+<footer>
+<div id="addendum">
+    <h2>Addendum:</h2>
+    <p>
+        Throughout the development of this interactive text-based game, my primary objective was to craft an engaging and immersive experience for players while experimenting with HTML, CSS, and JavaScript. The narrative is centered around choices, consequences, and visually captivating images to enhance the storytelling.
+    </p>
+    <h3>HTML Structure:</h3>
+    <p>
+        The HTML structure is organized with a header containing the game title and a main container for the story. This modular approach allows for easy updates and additions to the storyline.
+    </p>
+    <h3>CSS Styling:</h3>
+    <p>
+        The CSS styles aim to create a dark and mysterious atmosphere, aligning with the game's theme. The color palette, font selection, and box-shadow effects were carefully chosen to enhance visual appeal and maintain a consistent aesthetic.
+    </p>
+    <h3>JavaScript Implementation:</h3>
+    <p>
+        The JavaScript code manages the dynamic aspects of the game, initializing the game, updating content based on user choices, and controlling the flow of the narrative. I employed an object-oriented approach, creating a `storyData` object to store narrative elements like text, choices, consequences, and images for each stage of the game.
+    </p>
+    <h3>Challenges and Solutions:</h3>
+    <p>
+        One significant challenge was managing the complexity of the branching narrative. Organizing the `storyData` object to keep track of multiple story paths and ensuring a smooth transition between stages required careful planning. Handling dynamic image URLs and ensuring proper loading presented another challenge, addressed by updating the image source in the DOM based on the current stage.
+    </p>
+
+</footer>
+
+</body>
+</html>
