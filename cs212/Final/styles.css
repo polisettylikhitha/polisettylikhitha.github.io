@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark gray text */
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 48px;
+    margin: 0;
+    color: #0074d9; /* Royal blue title */
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #0074d9; /* Royal blue border */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 116, 217, 0.5);
+    background: linear-gradient(45deg, #0074d9, #2ecc71); /* Royal blue to green gradient */
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s infinite alternate;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: #0074d9; /* Royal blue cell background */
+    border: 2px solid #f0f0f0; /* Light gray border */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 116, 217, 0.7);
+}
+
+.cell.is-off {
+    background-color: #f0f0f0; /* Light gray background for off cells */
+    transform: scale(0.8);
+    box-shadow: none;
+}
+
+#timer, #clicks {
+    text-align: center;
+    font-size: 24px;
+    color: #0074d9; /* Royal blue text */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 200% 200%;
+    }
+}
+
+.reset-button {
+    background-color: #0074d9; /* Royal blue button background */
+    border: none;
+    color: #f0f0f0; /* Light gray button text */
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 20px auto; /* Center the button horizontally */
+    display: block;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.reset-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #fff; /* White text on hover */
+}
+
+.addendum-button {
+    background-color: #2ecc71; /* Green button background */
+    border: none;
+    color: #f0f0f0; /* Light gray button text */
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 20px auto; /* Center the button horizontally */
+    display: block;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.addendum-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #fff; /* White text on hover */
+}
+.addendum {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    display: none; /* Initially hidden */
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lights Out</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">🎨 Artistic Lights 🌟</h1>
+        <div class="info">
+            <div id="timer">Time Elapsed: 0 seconds</div>
+            <div id="clicks">Clicks Count: 0</div>
+        </div>
+    </header>
+
+    <div class="game-container" id="game-container"></div>
+    
+    <button id="reset-button" class="reset-button">Reset</button>
+    <button id="addendum-button" class="addendum-button">Show Addendum</button>
+
+    <div id="addendum" class="addendum hidden">
+        <h2>Addendum: Development Process and Insights</h2>
+        <p>
+            As an ITC student tasked with developing the "Lights Out" game, 
+            my journey was both challenging and enlightening. The first step was conceptualizing 
+            the game design, focusing on user engagement and intuitive gameplay. I chose a simple 
+            yet elegant design with a dynamic grid interface, ensuring a seamless user experience.
+        </p>
+        <p>
+            One of the significant challenges I faced was implementing the logic for toggling 
+            neighboring cells. This required careful consideration of edge cases, particularly 
+            at the grid's borders. I overcame this by carefully calculating the indices of the 
+            neighboring cells and ensuring they were within the grid's bounds before toggling them.
+        </p>
+        <p>
+            Another hurdle was managing the game's state, particularly the timer and click counter. 
+            Using JavaScript's setInterval and clearInterval functions, I was able to create a 
+            real-time timer that accurately reflected the game's progress. Handling the maximum 
+            number of clicks added an extra layer of complexity, but it also introduced a strategic 
+            element to the game.
+        </p>
+        <p>
+            Throughout this process, I gained valuable insights into the importance of clean and 
+            maintainable code, especially when dealing with complex game logic. I learned the 
+            significance of thoroughly testing each feature to ensure a bug-free user experience. 
+            Overall, this project has been a tremendous learning opportunity, enhancing my problem-solving 
+            skills and understanding of interactive web development.
+        </p>
+    </div>
+    
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
